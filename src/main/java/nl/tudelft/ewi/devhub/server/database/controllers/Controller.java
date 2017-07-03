@@ -33,7 +33,7 @@ public class Controller<T> {
 	public <V extends T> V persist(V entity) {
 		entityManager.persist(entity);
 		entityManager.flush();
-		log.debug("Persisted {}", entity);
+		//log.debug("Persisted {}", entity);
 		return entity;
 	}
 
